@@ -1,3 +1,6 @@
+import sys
+# appending a path
+sys.path.append('src')
 import operations as op
 a = 2
 b = 3
@@ -8,4 +11,6 @@ def test_sub():
 def test_mult():
     assert op.mult(a, b) == a*b
 def test_div():
-    assert op.div(a, b) == a/b       
+    assert op.div(a, b) == a/b   
+def test_pow():
+    assert op.pow(a,b) == a**b    

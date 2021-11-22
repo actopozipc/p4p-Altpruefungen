@@ -63,6 +63,7 @@ def main(args=[]):
             print("-2: subtract")
             print("-3: multiply")
             print("-4: divide")
+            print("-5: Pow")
             operation = input();
         else: #else the operator is just the first value in the commandline argument after the file name
             operation = args[1];
@@ -104,6 +105,14 @@ def main(args=[]):
                 print("Please only use integer values")
             except ZeroDivisionError: #divison with 0 is not allowed
                 print("Please dont divide by zero")
+        elif operation == "5":
+            PrintOperation("pow")
+            a,b = SetAB(args);
+            try:
+                erg = op.pow(float(a), float(b))
+                print(erg)
+            except ValueError:
+                print("Please only use integer values")
         else:
             print("No valid number selected")
 
