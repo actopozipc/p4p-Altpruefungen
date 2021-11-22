@@ -17,7 +17,7 @@ simplemath.mult(6,7)
 # returns 3
 simplemath.div(15,5)
 
-##Functions
+## Functions
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
